@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MY WEBSITE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><span>S</span>TELLAR</a>
+		<ul class="navigation">
+			<li><a href="#homepage">Home</a></li>
+			<li><a href="#categories">Categories</a></li>
+			<li><a href="#signup">Signup</a></li>
+			<div id="toggle">
+				<i class="indicator"></i>
+			</div>
+		</ul>
+	</header>
+	<section class="homepage" id="homepage">
+		<div class="content">
+			<h2>WELCOME TO STELLAR</h2>
+			<p>Welcome to STELLAR. Here you'll read about space travel, science fictions and rockets that launched towards space. For more astronomy lessons click the explore button.</p>
+			<a href="#" class="btn">Explore For More</a>
+		</div>
+	</section>
+
+	<section class="categories" id="categories">
+		<div class="title">
+			<h2 class="titletext"><span>S</span>TELLAR TABLE</h2>
+			<p>Jupiter, Black Hole and Andromeda</p>
+		</div>
+		<div class="box">
+			<div class="clip clip1">
+				<div class="content">
+					<h2>Jupiter</h2>
+					<p>Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass one-thousandth that of the Sun, but two and a half times that of all the other planets in the Solar System combined.</p>
+				</div>
+			</div>
+			<div class="clip clip2">
+				<div class="content">
+					<h2>Black Hole</h2>
+					<p>A black hole is a region of spacetime where gravity is so strong that nothing—no particles or even electromagnetic radiation such as light—can escape from it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole.</p>
+				</div>
+			</div>
+			<div class="clip clip3">
+				<div class="content">
+					<h2>Andromeda</h2>
+					<p>The Andromeda Galaxy, also known as Messier 31, M31, or NGC 224 and originally the Andromeda Nebula, is a barred spiral galaxy approximately 2.5 million light-years from Earth and the nearest major galaxy to the Milky Way.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="title2">
+			<h2 class="titletext"><span>S</span>TELLAR TABLE</h2>
+			<p>Endurance, Apollo 11, Wormhole and Science fictions</p>
+		</div>
+		<div class="box">
+			<div class="clip clip4">
+				<div class="content">
+					<h2>Endurance</h2>
+					<p>The <strong>Endurance</strong> is the interplanetary spacecraft built by NASA as part of Project <strong>Endurance</strong>. It is the ship that carries Cooper, Amelia, Doyle, Romilly, CASE, and TARS on their voyage through the wormhole to a system located in another galaxy near the black hole Gargantua.</p>
+				</div>
+			</div>
+			<div class="clip clip5">
+				<div class="content">
+					<h2>Apollo 11</h2>
+					<p><strong>Apollo 11</strong> was the first manned mission to land on the Moon. The first steps by humans on another planetary body were taken by Neil Armstrong and Buzz Aldrin on July 20,1969. The astronauts also returned to Earth the first samples from another planetary body.</p>
+				</div>
+			</div>
+			<div class="clip clip6">
+				<div class="content">
+					<h2>Wormhole</h2>
+					<p>A wormhole is a speculative structure linking disparate points in spacetime, and is based on a special solution of the Einstein field equations. A wormhole can be visualized as a tunnel with two ends at separate points in spacetime.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<form action="" method="POST">
+		<section class="signup" id="signup">
+			<div class="signupbox">
+				<h3>Signup</h3>
+				<div class="inputbox">
+					<input type="" name="firstname" placeholder="Firstname">
+				</div>
+				<div class="inputbox">
+					<input type="" name="middlename" placeholder="Middlename">
+				</div>
+				<div class="inputbox">
+					<input type="" name="lastname" placeholder="Lastname">
+				</div>
+				<div class="inputbox">
+					<input type="" name="gender" placeholder="Gender">
+				</div>
+				<div class="inputbox">
+					<input type="submit" name="submit" value="Submit">
+				</div>
+			</div>
+			
+		</section>
+	</form>
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		})
+	</script>
+</body>
+</html>

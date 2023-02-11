@@ -1,0 +1,323 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #2b2b2b;
+	transition: 0.5s;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+	overflow: hidden;
+}
+
+header.sticky {
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.010);
+	background: #031B88;
+}
+
+header .logo {
+	color: #fff;
+	font-weight: 200;
+	font-size: 3em;
+	letter-spacing: 5px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+header .logo:hover {
+	box-shadow: 0 5px 20px;
+	border-radius: 20px;
+
+}
+
+header .navigation {
+	position: relative;
+	display: flex;
+}
+
+header .navigation li {
+	list-style: none;
+	margin-left: 30px;
+}
+
+header .navigation li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+header .navigation li a:hover {
+	color: #2b2b2b;
+	box-shadow: 0 5px 20px;
+	border-radius: 20px;
+}
+
+header.sticky .navigation li a:hover {
+	color: #2b2b2b;
+	box-shadow: 0 5px 20px;
+	border-radius: 20px;
+}
+
+section {
+	padding: 100px;
+}
+
+.homepage {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/header.jpg);
+	background-size: cover;
+}
+
+.homepage .content {
+	max-width: 900px;
+	text-align: center;
+}
+
+.homepage .content h2 {
+	font-size: 3em;
+	color: #fff;
+	font-weight: 300;
+	margin-bottom: 50px;
+	letter-spacing: 5px;
+}
+
+.homepage .content p {
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.homepage .btn {
+	font-size: 20px;
+	color: #fff;
+	letter-spacing: 1px;
+	text-decoration: none;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	transition: 0.5s;
+	padding: 5px 10px;
+	background: #2b2b2b;
+}
+
+.homepage .btn:hover {
+	background: #031B88;
+}
+
+.categories {
+	overflow: hidden;
+	position: relative;
+}
+
+.categories:before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -20px;
+	bottom: -20px;
+	background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0.2)), url(img/body.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	filter: blur(1px);
+}
+
+.categories .title {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.categories .title .titletext {
+	color: #fff;
+	letter-spacing: 5px;
+	font-weight: 200;
+	margin-bottom: 15px;
+}
+
+.categories .title p {
+	color: #fff;
+}
+
+.categories .box {
+	margin-top: 40px;
+	position: relative;
+	background: #2b2b2b;
+	width: 100%;
+	height: 530px;
+}
+
+.categories .box .clip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+
+.categories .box .clip.clip1 {
+	background: url(img/img1.jpg);
+	background-size: cover;
+	clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+}
+
+.categories .box .clip.clip2 {
+	background: url(img/img2.jpg);
+	background-size: cover;
+	clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+}
+
+.categories .box .clip.clip3 {
+	background: url(img/img3.jpg);
+	background-size: cover;
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+
+.categories .box .clip.clip4 {
+	background: url(img/img4.jpg);
+	background-size: cover;
+	clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+}
+
+.categories .box .clip.clip5 {
+	background: url(img/img5.jpg);
+	background-size: cover;
+	clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+}
+
+.categories .box .clip.clip6 {
+	background: url(img/img6.jpg);
+	background-size: cover;
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+
+.categories .box:hover .clip {
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.categories .box .clip.clip:hover {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.categories .box .clip .content {
+	position: absolute;
+	bottom: -100%;
+	opacity: 0;
+	left: 0;
+	width: 50%;
+	padding: 20px;
+	background: ghostwhite;
+	transition: 0.5s;
+}
+
+.categories .box .clip:hover .content {
+	bottom: 0;
+	opacity: 1;
+	background: #fff;
+}
+
+.categories .title2 {
+	position: relative;
+	margin-top: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.categories .title2 .titletext {
+	color: #fff;
+	letter-spacing: 5px;
+	font-weight: 200;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.categories .title2 p {
+	text-align: center;
+	color: #fff;
+}
+
+.about {
+	background: #fff;
+	padding: 100px;
+	position: relative;
+	height: 100vh;
+}
+
+.signup {
+	background: url(img/body.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.signup .signupbox {
+	text-align: center;
+	background: #fff;
+	max-width: 400px;
+	border-radius: 15px;
+	padding: 45px 50px;
+}
+
+.signup .signupbox h3 {
+	font-size: 2em;
+	margin-bottom: 15px;
+}
+
+.signup .signupbox .inputbox {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.signup .signupbox .inputbox input {
+	outline: none;
+	padding: 5px;
+	font-size: 15px;
+	border: 1px solid #2b2b2b;
+	font-weight: 300;
+}
+
+.signup .signupbox .inputbox input[type="submit"] {
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+.signup .signupbox .inputbox input[type="submit"]:hover {
+	background: #2b2b2b;
+	color: #fff;
+}
