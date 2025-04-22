@@ -16,9 +16,10 @@ git clone https://github.com/Skyrim626/Stellar-Responsive-Website.git
 
 Open index.html using any modern web browser (e.g., Chrome, Firefox, Edge).
 
-Stellar-Responsive-Website/
-├── img/ # Folder containing images used in the website
-├── index.html # Main HTML file
-└── style.css # Stylesheet for the website
+Stellar-Responsive-Website
+
+- img/ # Folder containing images used in the website
+- index.html # Main HTML file
+- style.css # Stylesheet for the website
 
 Enjoy exploring the Stellar Responsive Website!
